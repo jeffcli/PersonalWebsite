@@ -1,3 +1,5 @@
+import styles from "./About.module.css";
+
 const About: React.FC = () => {
     // Example data for skills (replace with your actual skills)
     const skills = [
@@ -11,22 +13,21 @@ const About: React.FC = () => {
     ];
 
     return (
-        <div className="about-container">
+        <div className={styles.aboutContainer}>
             <h1>About Me</h1>
-            <div className="about-content">
-                <div className="profile-image">
+            <div className={styles.aboutContent}>
+                <div className={styles.profileImage}>
                     {/* Optional: Add your profile image */}
                     <img src="path/to/profile-image.jpg" alt="Profile" />
                 </div>
-                <div className="profile-info">
+                <div className={styles.profileInfo}>
                     <p>
-                        My name is Jeffrey Li and I am a third year at Worcester Polytechnic Institute majoring in Computer Science and Math.
+                        My name is Jeffrey Li and I am a third year at Worcester Polytechnic Institute majoring in Computer Science and Math. My Computer science interests include Software Engineering, System Design and Artificial Intelligence. My Mathematical interests include statistics and quantative analysis.
                     </p>
                     <p>
-                        Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus,
-                        a condimentum risus mi et quam. Pellentesque auctor neque nec urna.
+                        Outside of academics, I am an avid runner and speedcuber.
                     </p>
-                    <div className="skills-list">
+                    <div className={styles.skillsList}>
                         <h3>Skills</h3>
                         <ul>
                             {skills.map((skill, index) => (

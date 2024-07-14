@@ -1,7 +1,8 @@
 
 
 import React, { useState } from 'react';
-import './Contact.css'; // Optional: for styling
+import './Contact.module.css';
+import styles from "./Contact.module.css"; // Optional: for styling
 
 const Contact: React.FC = () => {
     // Example state for form fields (replace with your actual form state)
@@ -34,10 +35,10 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className="contact-container">
+        <div className={styles.contactContainer}>
             <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
+            <form onSubmit={handleSubmit} className={styles.contactForm}>
+                <div className={styles.formGroup}>
                     <label htmlFor="name">Name</label>
                     <input
                         type="text"
@@ -48,7 +49,7 @@ const Contact: React.FC = () => {
                         required
                     />
                 </div>
-                <div className="form-group">
+                <div className={styles.formGroup}>
                     <label htmlFor="email">Email</label>
                     <input
                         type="email"
@@ -59,7 +60,7 @@ const Contact: React.FC = () => {
                         required
                     />
                 </div>
-                <div className="form-group">
+                <div className={styles.formGroup}>
                     <label htmlFor="message">Message</label>
                     <textarea
                         id="message"

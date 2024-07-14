@@ -1,26 +1,33 @@
-.contact-container {
-    max-width: 700px;
+.contactContainer {
+    width: 100vw;
+
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
-.contact-form {
+.contactForm {
+    width: 500px;
     display: flex;
     flex-direction: column;
 }
 
-.form-group {
+.formGroup {
+    width: 500px;
     margin-bottom: 20px;
 }
 
-.form-group label {
+.formGroup label {
     font-weight: bold;
     margin-bottom: 8px;
     display: block;
 }
 
-.form-group input,
-.form-group textarea {
+.formGroup input,
+.formGroup textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -28,13 +35,13 @@
     width: 100%;
 }
 
-.form-group textarea {
+.formGroup textarea {
     resize: vertical; /* Allow vertical resizing of textarea */
     min-height: 150px; /* Set a minimum height */
 }
 
-.form-group input[type="submit"],
-.form-group button {
+.formGroup input[type="submit"],
+.formGroup button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -45,7 +52,7 @@
     transition: background-color 0.3s ease;
 }
 
-.form-group input[type="submit"]:hover,
-.form-group button:hover {
+.formGroup input[type="submit"]:hover,
+.formGroup button:hover {
     background-color: #0056b3;
 }

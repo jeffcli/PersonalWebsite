@@ -1,19 +1,19 @@
 import {Link} from "react-router-dom";
-
+import styles from "./Home.module.css"
 const Home: React.FC = () => {
     return (
-        <div className="home-container">
-            <div className="home-content">
-                <h1>Welcome to My Portfolio</h1>
+        <div className={styles.homeContainer}>
+            <div className={styles.homeContent}>
+                <h1>Welcome to My Portfolio Website</h1>
                 <p>
-                    Hello! I'm [Your Name], a [Your Profession]. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                    Hello! I'm Jeffrey, a current third year undergraduate student at Worcester Polytechnic Institute (WPI). I am majoring in Computer Science and Math.
                 </p>
-                <div className="cta-buttons">
-                    <Link to="/portfolio" className="btn-primary">
+                <div className={styles.ctaButtons}>
+                    <Link to="/portfolio" className={styles.btnPrimary}>
                         View Portfolio
                     </Link>
-                    <Link to="/contact" className="btn-secondary">
+                    <br/>
+                    <Link to="/contact" className={styles.btnSecondary}>
                         Contact Me
                     </Link>
                 </div>

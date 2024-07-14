@@ -1,5 +1,6 @@
 
 import React from "react";
+import styles from "./Projects.module.css";
 
 const Portfolio: React.FC = () => {
     // Example data for projects (replace with your actual projects data)
@@ -24,9 +25,9 @@ const Portfolio: React.FC = () => {
     ];
 
     return (
-        <div className="portfolio-container">
+        <div className={styles.portfolioContainer}>
             <h1>Portfolio</h1>
-            <div className="projects-container">
+            <div className={styles.projectsContainer}>
                 {projects.map(project => (
                     <div className="project-card" key={project.id}>
                         <img src={project.imageUrl} alt={project.title} className="project-image" />

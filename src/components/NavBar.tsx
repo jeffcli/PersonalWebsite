@@ -1,35 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css'; // Optional: for styling
+import styles from './NavBar.module.css'; // Optional: for styling
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="navbar">
-            <div className="navbar-container">
-                <Link to="/" className="navbar-logo">
-                    Your Name
+        <nav className={styles.navbar}>
+            <div className={styles.navbarContainer}>
+                <Link to="/" className={styles.navbarLogo}>
+                    Jeffrey Li
                 </Link>
-                <div className="menu-icon">
+                <div className={styles.menuIcon}>
                     {/* Optional: Add hamburger menu icon for mobile */}
                 </div>
-                <ul className="nav-menu">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-links">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/about" className="nav-links">
+                <ul className={styles.navMenu}>
+
+                    <li className={styles.navItem}>
+                        <Link to="/about" className={styles.navLinks}>
                             About
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/portfolio" className="nav-links">
+                    <li className={styles.navItem}>
+                        <Link to="/portfolio" className={styles.navLinks}>
                             Portfolio
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/contact" className="nav-links">
+                    <li className={styles.navItem}>
+                        <Link to="/contact" className={styles.navLinks}>
                             Contact
                         </Link>
                     </li>
