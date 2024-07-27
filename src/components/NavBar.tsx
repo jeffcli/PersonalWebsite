@@ -1,15 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styles from './NavBar.module.css'; // Optional: for styling
+import cubeIcon from "./assets/rubiks.png";
+
 
 const Navbar: React.FC = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbarContainer}>
-                <Link to="/" className={styles.navbarLogo}>
-                    Jeffrey Li
-                </Link>
-                <div className={styles.menuIcon}>
+
+
+                    <a href=
+                           "/">
+                        <img src={cubeIcon} className={styles.rubk}
+                             alt="Click to visit geeksforgeeks.org"/>
+                    </a>
+                    <Link to="/" className={styles.navbarLogo}>
+                        Jeffrey Li
+                    </Link>
+
+            <div className={styles.menuIcon}>
                     {/* Optional: Add hamburger menu icon for mobile */}
                 </div>
                 <ul className={styles.navMenu}>
@@ -21,14 +31,10 @@ const Navbar: React.FC = () => {
                     </li>
                     <li className={styles.navItem}>
                         <Link to="/portfolio" className={styles.navLinks}>
-                            Portfolio
+                            Projects
                         </Link>
                     </li>
-                    <li className={styles.navItem}>
-                        <Link to="/contact" className={styles.navLinks}>
-                            Contact
-                        </Link>
-                    </li>
+
                 </ul>
             </div>
         </nav>

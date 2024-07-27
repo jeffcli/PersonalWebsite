@@ -4,7 +4,6 @@ import Navbar from './components/NavBar.tsx';
 import Home from './components/Home.tsx';
 import About from './components/About.tsx';
 import Portfolio from './components/Projects.tsx';
-import Contact from './components/Contact.tsx';
 
 
 
@@ -16,7 +15,7 @@ function App() {
                 <Route path="/" Component={Home} />
                 <Route path="/about" Component={About} />
                 <Route path="/portfolio" Component={Portfolio} />
-                <Route path="/contact" Component={Contact} />
+
             </Routes>
         </Router>
     );

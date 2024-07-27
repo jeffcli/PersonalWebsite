@@ -10,6 +10,11 @@
     text-align: center;
 }
 
+.textColor {
+    color: black;
+    font-family: AppleSystemUIFont;
+}
+
 /* Style for the content section */
 .homeContent {
     max-width: 600px;
@@ -19,14 +24,14 @@
 /* Style for the heading */
 .homeContent1 {
     font-size: 36px;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
 }
 
 /* Style for the paragraph text */
 .homeContentp {
     font-size: 18px;
-    color: #666;
+    color: black;
     line-height: 1.6;
     margin-bottom: 30px;
 }

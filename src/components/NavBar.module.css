@@ -9,6 +9,12 @@
     font-size: 18px;
 }
 
+.rubk {
+    height: 8vh;
+    width: 4vw;
+}
+
+
 /* Style for the navbar container */
 .navbarContainer {
     display: flex;
